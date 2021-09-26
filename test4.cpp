@@ -14,7 +14,7 @@ int main() {
 	cv::Mat image1(width+1, height+1, CV_8U,base);
 	Bresenham(image1, 0, -360, 0, 360,50);
 	Bresenham(image1, -540, 0, 540, 0,50);
-	LineDDA(image1, 0, 0, 200, 200);
+	LineDDA(image1, 0, 0, 250, 250);
 	LineMid(image1, 100,300, 300, 100);
 	Bresenham(image1, -400, -200, -100, 300);
 	CircleDDA(image1, 50, 50, 50);
