@@ -17,10 +17,11 @@ int main() {
 	LineDDA(image1, 0, 0, 200, 200);
 	LineMid(image1, 100,300, 300, 100);
 	Bresenham(image1, -400, -200, -100, 300);
-	CircleDDA(image1, 50, 50, 50); 
+	CircleDDA(image1, 50, 50, 50);
 	CircleMid(image1, -30, -50, 30);
 	EllipeMid(image1, -100, -50, 100, 200);
 	cv::imshow("Image1", image1);
 	cv::waitKey(0);
+	fuck;
 	return 0;
 }
