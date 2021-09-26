@@ -20,7 +20,6 @@ int main() {
 	CircleDDA(image1, 50, 50, 50);
 	CircleMid(image1, -30, -50, 30);
 	EllipeMid(image1, -100, -50, 100, 200);
-	EllipeMid(image1, -100, -50, 100, 200);
 	cv::imshow("Image1", image1);
 	cv::waitKey(0);
 	return 0;
