@@ -9,11 +9,11 @@ int main() {
 	cv::utils::logging::setLogLevel(cv::utils::logging::LOG_LEVEL_SILENT);
 	cv::namedWindow("Image1");
 	int base = 0;
-	int width = 720;
-	int height = 1080;
-	cv::Mat image1(width+1, height+1, CV_8U,base);
-	Bresenham(image1, 0, -360, 0, 360,50);
-	Bresenham(image1, -540, 0, 540, 0,50);
+	int height = 720;
+	int width = 1080;
+	cv::Mat image1(height+1, width+1, CV_8U,base);
+	Bresenham(image1, 0, -(height >> 1), 0, (height >> 1), 50);
+	Bresenham(image1, -(width >> 1), 0, (width >> 1), 0, 50);
 	LineDDA(image1, 0, 0, 300, 300);
 	LineMid(image1, 100,300, 300, 100);
 	Bresenham(image1, -400, -200, -100, 300);
