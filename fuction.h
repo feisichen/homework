@@ -143,7 +143,7 @@ void Ellcomplete(cv::Mat& background, int x, int X, int y, int Y, uchar color = 
 }
 void EllipeMid(cv::Mat& background, int x, int y, int a, int b, uchar color = 255) {
 	int X = 0, Y = b;
-	int d1 = b * b - a * a * b + ((a * a) >> 2);
+	int d1 = b * b - a * a * b + static_cast<int>(ceil(static_cast<float>((a * a)/4)));
 	Ellcomplete(background, x, X, y, Y, color);
 	while (b * b * (X + 1) < a * a * (Y - 0.5)) {
 		if (d1 < 0) {
